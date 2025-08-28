@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ctc1gVGlT0W-v7T3cuKpxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/ap/signin" CVScreenId="8136bf5d-b951-4065-94e2-b0dc6dc73eab" CvElementArea="1706, 706, 450, 53" CvTextArea="1899, 722, 61, 24" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="1710, 710, 443, 45" ElementType="Button" FullSelectorArgument="&lt;webctrl id='signInSubmit' tag='INPUT' /&gt;" Guid="bf845779-ed60-4353-96c0-4e2dcefa09be" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb Sign-In' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f3945bc8f59025916ecfa75d34e92657.png" xmlns="">0DNItdQPPDUChptExe7-hFA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

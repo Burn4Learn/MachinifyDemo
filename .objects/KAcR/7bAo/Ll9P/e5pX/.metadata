@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Email or mobile phone n…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "e5pXWIolT0yDAV6XgPhyQw",
+  "Reference": "d86XGKUm3Eqrjc7V9FyMAg/e5pXWIolT0yDAV6XgPhyQw",
+  "ParentRef": "d86XGKUm3Eqrjc7V9FyMAg/Ll9PvI1930ya91yWtkHRpA",
+  "Created": "2025-08-28T01:04:56.8980116Z",
+  "Updated": "2025-08-28T01:04:56.8980116Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome New Incognito Tab - Google Chrome",
+  "Type": "App",
+  "Id": "KAcRWZV2e0CAbhD2hg8LHw",
+  "Reference": "d86XGKUm3Eqrjc7V9FyMAg/KAcRWZV2e0CAbhD2hg8LHw",
+  "Created": "2025-08-28T00:48:31.9198247Z",
+  "Updated": "2025-08-28T00:48:31.9198247Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

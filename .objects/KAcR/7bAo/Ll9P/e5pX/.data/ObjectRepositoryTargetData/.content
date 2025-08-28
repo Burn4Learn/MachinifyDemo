@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-Ay__Z7hD0CWgQuPBjr0mw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/ap/signin" CVScreenId="8136bf5d-b951-4065-94e2-b0dc6dc73eab" CvElementArea="1704, 525, 453, 55" CvType="InputBox" DesignTimeRectangle="1709, 529, 445, 47" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ap_email' tag='INPUT' type='email' class='a-input-text a-span12 auth-autofocus auth-required-field' aaname='                   Email or mobile phone number                 ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="13814f70-c911-4406-948c-983c445156e0" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8136bf5d-b951-4065-94e2-b0dc6dc73eab" CvTextArea="1710, 501, 310, 19" CvTextArgument="Email or mobile phone number" CvType="Text" DesignTimeRectangle="1709, 496, 445, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='a-form-label' aaname='                   Email or mobile phone number                 ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Email or mobile phone number' /&gt;" Guid="7ee31708-6d85-4c97-8c27-184d87013a8c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f5ec25ea1ea1303793028e8fece6ae96.png" xmlns="">0qi7rAEMUsE6py8tI7jrANg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

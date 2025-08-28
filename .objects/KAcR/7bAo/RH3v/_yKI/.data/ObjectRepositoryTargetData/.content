@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yRQO-4lkzkKISf5YgbGTbw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/user/ur207704531/watchlist" CVScreenId="031dc064-d9f1-4dc8-baf1-8a13fb7cfc39" CvTextArea="1182, 748, 42, 21" CvTextArgument="Edit" CvType="Text" DesignTimeRectangle="1184, 746, 38, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='__next' tag='SPAN' /&gt;" Guid="212f9d39-af6a-440a-bfd3-bb78b59dd4d3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Watchlist' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="031dc064-d9f1-4dc8-baf1-8a13fb7cfc39" CvTextArea="217, 207, 75, 34" CvTextArgument="IMDb" CvType="Text" DesignTimeRectangle="205, 181, 102, 84" FullSelectorArgument="&lt;webctrl id='floater_1454594' tag='IFRAME' /&gt;&lt;webctrl parentname='logo-video-hover-panel' tag='DIV' /&gt;" Guid="af0e7c3f-10aa-4528-8b35-f85e7218276b" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bc62c150e2498982606b2be2b7d7a297.png" xmlns="">0mJqBMldXuEmEhjLW7CAVHQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VzctM1CMtkCTn_MOT3CGgw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/list/ls4102097003/edit" CVScreenId="480610cf-379d-4142-b015-81a7a771353a" CvElementArea="212, 679, 972, 78" CvType="InputBox" DesignTimeRectangle="215, 682, 966, 72" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='text-input__7013' tag='INPUT' type='search' class='ipc-textinput__input' placeholder='Search title to add' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6a2517d9-635e-4ac9-926a-bc6876535532" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Watchlist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="480610cf-379d-4142-b015-81a7a771353a" CvTextArea="211, 639, 243, 22" CvTextArgument="Add a title to this list" CvType="Text" DesignTimeRectangle="214, 633, 968, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Add a title to this list' parentid='__next' tag='DIV' type='' class='sc-1fef96a5-1 kOCnEt' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Add a title to this list' /&gt;" Guid="45b7c195-ae84-42dc-88d5-da8e28dc3f96" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2ab46038f1d5f68bdc2fcfb40bba071b.png" xmlns="">0Bx7y3y2I5kC9SXjHC9VhdA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

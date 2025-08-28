@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NNn6VyTSG0SeF9-1Z_717w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com" CVScreenId="8ac58c6f-2ee0-4d85-a3b2-eaae09cbcf35" CvTextArea="1327, 211, 127, 21" CvTextArgument="Watchlist 7" CvType="Text" DesignTimeRectangle="1330, 208, 134, 30" FullSelectorArgument="&lt;webctrl aaname='Watchlist' class='ipc-btn__text' parentid='imdbHeader' tag='SPAN' /&gt;" Guid="d2018488-e51d-4ff1-8bc8-602c49342760" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8ac58c6f-2ee0-4d85-a3b2-eaae09cbcf35" CvElementArea="204, 196, 102, 54" CvTextArea="217, 207, 75, 34" CvTextArgument="IMDb" CvType="Button" DesignTimeRectangle="205, 181, 102, 84" FullSelectorArgument="&lt;webctrl id='floater_7883726' tag='IFRAME' /&gt;&lt;webctrl parentname='logo-video-hover-panel' tag='DIV' /&gt;" Guid="fa37da21-b1f7-4477-9859-ae5aded10029" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b23a662f3ba57c1fbc7bf7313687e46a.png" xmlns="">06s0L0TjCo0CIEoiW7TechQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

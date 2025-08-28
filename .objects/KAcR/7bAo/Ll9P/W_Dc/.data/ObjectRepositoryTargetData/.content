@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6c1c96U2gkiZ1nwASS-e-g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/registration/signin" CVScreenId="ef1acb0f-3d29-4555-a4ce-08839f7fde69" CvElementArea="1272, 629, 674, 79" CvType="InputBox" DesignTimeRectangle="1271, 631, 672, 74" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Sign in with IMDb' parentid='__next' tag='A' type='' class='ipc-btn ipc-btn--full-width ipc-btn--left-align-content ipc-btn--large-height ipc-btn--core-base ipc-btn--theme-base ipc-btn--button-radius ipc-outline-button sc-4ab28ae0-0 hSUnnV' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Sign in with IMDb' /&gt;" Guid="58bb8ccc-53e0-43c7-9819-5b751988ce43" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ef1acb0f-3d29-4555-a4ce-08839f7fde69" CvElementArea="1272, 629, 674, 79" CvType="InputBox" DesignTimeRectangle="1296, 632, 244, 72" FuzzySelectorArgument="&lt;webctrl aaname='Sign in with IMDb' parentid='__next' tag='SPAN' type='' class='sc-4ab28ae0-1 kgoLqw' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Sign in with IMDb' /&gt;" Guid="71508620-5a6b-4e87-ac01-eb918a3f5505" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="eb17f512894ab989f9ecf63a13973bcb.png" xmlns="">0mMj6xaf_lkCQjwODWEhJwA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

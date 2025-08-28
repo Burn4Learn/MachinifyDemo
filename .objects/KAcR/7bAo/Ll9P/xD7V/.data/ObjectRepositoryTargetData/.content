@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ddxDPCu-NUiCsMGcNFFTQA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com" CVScreenId="474c59ed-b327-411f-97c4-ebeda1b0e38d" CvTextArea="2682, 302, 70, 24" CvTextArgument="Sign in" CvType="Text" DesignTimeRectangle="2685, 297, 68, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sign in' class='ipc-btn__text' parentid='imdbHeader' tag='SPAN' /&gt;" Guid="2132d381-a29e-4db3-9ee0-06710e6151e7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="474c59ed-b327-411f-97c4-ebeda1b0e38d" CvTextArea="987, 296, 73, 33" CvTextArgument="IMDb" CvType="Text" DesignTimeRectangle="975, 270, 102, 84" FullSelectorArgument="&lt;webctrl id='floater_8428395' tag='IFRAME' /&gt;&lt;webctrl parentname='logo-video-hover-panel' tag='DIV' /&gt;" Guid="f14f6f0a-26d8-40c1-870e-7f87d91c315e" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5f93454721b6b5b62d5e979cdea77d3f.png" xmlns="">0kUiLq3k2uky5GMGB0ApbQg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

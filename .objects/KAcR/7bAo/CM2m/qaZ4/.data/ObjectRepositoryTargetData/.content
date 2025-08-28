@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="82lxFyXwgky58NkX8d5yUg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/list/ls4102097003/edit" CVScreenId="ca3c6471-c30f-493c-a49d-99fde407b17b" CvElementArea="1934, 1174, 462, 60" CvTextArea="2133, 1193, 66, 21" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="1940, 1177, 453, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Delete' tag='BUTTON' type='' class='ipc-btn ipc-btn--full-width ipc-btn--center-align-content ipc-btn--default-height ipc-btn--core-accent2 ipc-btn--theme-baseAlt ipc-btn--button-radius' aaname='Delete' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Delete' /&gt;" Guid="05bf5ae3-3065-410e-96d9-927919ff5243" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Watchlist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ca3c6471-c30f-493c-a49d-99fde407b17b" CvElementArea="1934, 1174, 462, 60" CvTextArea="2133, 1193, 66, 21" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="2135, 1189, 63, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Delete' class='ipc-btn__text' type='' tag='SPAN' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Delete' /&gt;" Guid="bc124991-382d-43ab-b265-d9abe070d66c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dd740dacad2afd1ed01b27ad6545efad.png" xmlns="">0pyQptBtRxkiJE4rxy4tchQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

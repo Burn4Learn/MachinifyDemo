@@ -105,7 +105,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="600,206" sap2010:WorkflowViewState.IdRef="Comment_1" Text="This flow assumes a triggering event on the excel list. Another way to manage this would be to assume that it's a timed automation, waking to examine the excel list. If so, then the flow should actually read the excel file just after initialization, to determine if other steps are necessary.&#xD;&#xA;" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="600,206" sap2010:WorkflowViewState.IdRef="Comment_1" Text="This flow assumes a triggering event on the excel list. Another way to manage this would be to assume that it's a timed automation, waking to examine the excel list. If so, then the flow should actually read the excel file just after initialization, to determine if other steps are necessary.&#xA;" />
     <Flowchart sap:VirtualizedContainerService.HintSize="600,648" sap2010:WorkflowViewState.IdRef="Flowchart_2">
       <Flowchart.Variables>
         <Variable x:TypeArguments="ui:UiElement" Name="BrowserIntance" />
@@ -212,6 +212,7 @@
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <av:Point x:Key="ShapeLocation">245,545</av:Point>
                             <av:Size x:Key="ShapeSize">110,70</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">355,580 555,580 555,250 525,250</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ListManager - Invoke Workflow File (ListManager.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ListManager.xaml">
@@ -232,27 +233,38 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InvokeWorkflowFile>
+                        <FlowStep.Next>
+                          <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">415,215</av:Point>
+                                <av:Size x:Key="ShapeSize">110,70</av:Size>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EndAutomation - Invoke Workflow File (Shutdown\\EndAutomation.xaml)" sap:VirtualizedContainerService.HintSize="336,145.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Shutdown\\EndAutomation.xaml">
+                              <ui:InvokeWorkflowFile.Arguments>
+                                <InArgument x:TypeArguments="s:Exception" x:Key="exception">
+                                  <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">FlowControlException</CSharpValue>
+                                </InArgument>
+                                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">
+                                  <CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">Config</CSharpValue>
+                                </InArgument>
+                                <InArgument x:TypeArguments="ui:UiElement" x:Key="browserInstance">
+                                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">BrowserIntance</CSharpValue>
+                                </InArgument>
+                              </ui:InvokeWorkflowFile.Arguments>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:InvokeWorkflowFile>
+                          </FlowStep>
+                        </FlowStep.Next>
                       </FlowStep>
                     </FlowDecision.True>
                     <FlowDecision.False>
-                      <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_3">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <av:Point x:Key="ShapeLocation">415,215</av:Point>
-                            <av:Size x:Key="ShapeSize">110,70</av:Size>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EndAutomation - Invoke Workflow File (Shutdown\\EndAutomation.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Shutdown\\EndAutomation.xaml">
-                          <ui:InvokeWorkflowFile.Arguments>
-                            <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                          </ui:InvokeWorkflowFile.Arguments>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </ui:InvokeWorkflowFile>
-                      </FlowStep>
+                      <x:Reference>__ReferenceID0</x:Reference>
                     </FlowDecision.False>
                   </FlowDecision>
                 </FlowStep.Next>

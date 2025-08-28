@@ -1,7 +1,7 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ManageList" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ManageList" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="titlesDt" Type="InArgument(sd:DataTable)" />
     <x:Property Name="browserInstance" Type="InArgument(ui:UiElement)" />
-    <x:Property Name="titles" Type="InArgument(s:String[])" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
@@ -48,6 +48,7 @@
       <x:String>UiPath.Shared.Activities.Business</x:String>
       <x:String>System.Numerics</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Xml.Serialization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -110,42 +111,59 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ManageList" sap:VirtualizedContainerService.HintSize="1910,3087.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ManageList" sap:VirtualizedContainerService.HintSize="1910,3434" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="s:String[]" Name="titles" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="700,3064.6666666666665" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="700,3411.3333333333335" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="698,2634.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_12">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="698,2981.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_12">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <If DisplayName="If titles array contains titles to delete" sap:VirtualizedContainerService.HintSize="664,2574.6666666666665" sap2010:WorkflowViewState.IdRef="If_4">
+          <If DisplayName="If titles array contains titles to delete" sap:VirtualizedContainerService.HintSize="664,2921.3333333333335" sap2010:WorkflowViewState.IdRef="If_4">
             <If.Condition>
               <InArgument x:TypeArguments="x:Boolean">
-                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">titles.Length &gt; 0</CSharpValue>
+                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">titlesDt.RowCount() &gt; 0</CSharpValue>
               </InArgument>
             </If.Condition>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="662,2418.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="662,2765.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_15">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="628,2358.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" IsDisplayNameAuto="True" OpenMode="Never" ScopeGuid="4350b638-283f-4a2c-b31a-54637d44c566" Version="V2">
+                <Assign sap:VirtualizedContainerService.HintSize="628,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">
+                      <CSharpReference x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">titles</CSharpReference>
+                    </OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">
+                      <CSharpValue x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">titlesDt.AsEnumerable().Select(row =&gt; row.Field&lt;string&gt;("Title")).ToArray();</CSharpValue>
+                    </InArgument>
+                  </Assign.Value>
+                </Assign>
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="628,2588" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" IsDisplayNameAuto="True" OpenMode="Never" ScopeGuid="4350b638-283f-4a2c-b31a-54637d44c566" Version="V2">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,2196.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,2426" sap2010:WorkflowViewState.IdRef="Sequence_2">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="uiElements" />
                           <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="topUiElements" />
@@ -261,7 +279,7 @@
                                           </OutArgument>
                                         </uix:NGetText.TextString>
                                       </uix:NGetText>
-                                      <ui:Comment sap:VirtualizedContainerService.HintSize="488,166.66666666666666" sap2010:WorkflowViewState.IdRef="Comment_1" Text="It would be much better to use a Regex to extract the movie title, then check the array for the title. For time purposes, willing to incrue the technical debt with a note to refactor&#xD;&#xA;" />
+                                      <ui:Comment sap:VirtualizedContainerService.HintSize="488,166.66666666666666" sap2010:WorkflowViewState.IdRef="Comment_1" Text="It would be much better to use a Regex to extract the movie title, then check the array for the title. For time purposes, willing to incrue the technical debt with a note to refactor&#xA;" />
                                       <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For each title to delete in array" sap:VirtualizedContainerService.HintSize="488,785.3333333333334" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
                                         <ui:ForEach.Body>
                                           <ActivityAction x:TypeArguments="x:String">
@@ -369,12 +387,33 @@
                             </InArgument>
                           </ui:ForEach.Values>
                         </ui:ForEach>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Delete'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4350b638-283f-4a2c-b31a-54637d44c566" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Delete'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4350b638-283f-4a2c-b31a-54637d44c566" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="imdb.com/list/ls4102097003/edit" CVScreenId="270063c4-8b11-4dd1-8c14-72147de6d92e" ContentHash="ATP3XMTD9EqKF0-j5bmyFA" CvTextArea="741, 936, 64, 21" CvTextArgument="Delete" CvType="Text" DesignTimeRectangle="742, 932, 63, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Delete' class='ipc-btn__text' parentid='__next' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Delete' /&gt;" Guid="2888a4bc-2839-4c7e-9b06-20696cebc48f" InformativeScreenshot="1ca905775dd740692f59f1278daf7653.png" Reference="d86XGKUm3Eqrjc7V9FyMAg/XM3Paq3QKk2iAa5UZsjxXw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Watchlist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                   <uix:Target CVScreenId="270063c4-8b11-4dd1-8c14-72147de6d92e" CvTextArea="741, 936, 64, 21" CvTextArgument="Delete" CvType="Text" DesignTimeRectangle="685, 920, 144, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Delete 1 item from this list' tag='BUTTON' type='' class='ipc-btn ipc-btn--single-padding ipc-btn--center-align-content ipc-btn--default-height ipc-btn--core-base ipc-btn--theme-base ipc-btn--button-radius ipc-btn--on-accent2 ipc-text-button' aaname='Delete' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Delete' /&gt;" Guid="0e65aee6-b663-4189-ae4f-46f703b25399" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Delete(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="560,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4350b638-283f-4a2c-b31a-54637d44c566" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="imdb.com/list/ls4102097003/edit" CVScreenId="ca3c6471-c30f-493c-a49d-99fde407b17b" ContentHash="82lxFyXwgky58NkX8d5yUg" CvElementArea="1934, 1174, 462, 60" CvTextArea="2133, 1193, 66, 21" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="1940, 1177, 453, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Delete' tag='BUTTON' type='' class='ipc-btn ipc-btn--full-width ipc-btn--center-align-content ipc-btn--default-height ipc-btn--core-accent2 ipc-btn--theme-baseAlt ipc-btn--button-radius' aaname='Delete' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Delete' /&gt;" Guid="05bf5ae3-3065-410e-96d9-927919ff5243" InformativeScreenshot="dd740dacad2afd1ed01b27ad6545efad.png" Reference="d86XGKUm3Eqrjc7V9FyMAg/qaZ4kr7hREaCn8F63awzuw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Watchlist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <uix:Target CVScreenId="ca3c6471-c30f-493c-a49d-99fde407b17b" CvElementArea="1934, 1174, 462, 60" CvTextArea="2133, 1193, 66, 21" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="2135, 1189, 63, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Delete' class='ipc-btn__text' type='' tag='SPAN' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Delete' /&gt;" Guid="bc124991-382d-43ab-b265-d9abe070d66c" SearchSteps="FuzzySelector, CV" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
                             </uix:TargetAnchorable>

@@ -143,7 +143,7 @@
             </ui:FilterDataTable.Filters>
             <ui:FilterDataTable.OutputDataTable>
               <OutArgument x:TypeArguments="sd:DataTable">
-                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">titlesDT</CSharpReference>
+                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">titlesDT</CSharpReference>
               </OutArgument>
             </ui:FilterDataTable.OutputDataTable>
             <ui:FilterDataTable.SelectColumns>
@@ -198,7 +198,12 @@
                   </If>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EditList - Invoke Workflow File (IMDB\\EditList.xaml)" sap:VirtualizedContainerService.HintSize="452,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="IMDB\\EditList.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      <InArgument x:TypeArguments="ui:UiElement" x:Key="browserInstance">
+                        <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">browserInstance</CSharpValue>
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="title">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">currentRow["Title"].ToString()</CSharpValue>
+                      </InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                 </Sequence>
@@ -211,7 +216,7 @@
             </ui:ForEachRow.CurrentIndex>
             <ui:ForEachRow.DataTable>
               <InArgument x:TypeArguments="sd:DataTable">
-                <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">titlesDT</CSharpValue>
+                <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">titlesDT</CSharpValue>
               </InArgument>
             </ui:ForEachRow.DataTable>
           </ui:ForEachRow>

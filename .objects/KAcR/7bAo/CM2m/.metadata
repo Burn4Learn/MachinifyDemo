@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Your Watchlist",
+  "Type": "Screen",
+  "Id": "CM2mPlv30UW1u1RaMIgCfg",
+  "Reference": "d86XGKUm3Eqrjc7V9FyMAg/CM2mPlv30UW1u1RaMIgCfg",
+  "ParentRef": "d86XGKUm3Eqrjc7V9FyMAg/7bAoACCnFU2rlX3wCe7SbQ",
+  "Created": "2025-08-28T06:01:43.712465Z",
+  "Updated": "2025-08-28T06:01:43.712465Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

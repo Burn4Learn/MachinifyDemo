@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ATP3XMTD9EqKF0-j5bmyFA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="imdb.com/list/ls4102097003/edit" CVScreenId="270063c4-8b11-4dd1-8c14-72147de6d92e" CvTextArea="741, 936, 64, 21" CvTextArgument="Delete" CvType="Text" DesignTimeRectangle="742, 932, 63, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Delete' class='ipc-btn__text' parentid='__next' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Delete' /&gt;" Guid="2888a4bc-2839-4c7e-9b06-20696cebc48f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Your Watchlist' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="270063c4-8b11-4dd1-8c14-72147de6d92e" CvTextArea="741, 936, 64, 21" CvTextArgument="Delete" CvType="Text" DesignTimeRectangle="685, 920, 144, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Delete 1 item from this list' tag='BUTTON' type='' class='ipc-btn ipc-btn--single-padding ipc-btn--center-align-content ipc-btn--default-height ipc-btn--core-base ipc-btn--theme-base ipc-btn--button-radius ipc-btn--on-accent2 ipc-text-button' aaname='Delete' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Delete' /&gt;" Guid="0e65aee6-b663-4189-ae4f-46f703b25399" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1ca905775dd740692f59f1278daf7653.png" xmlns="">0i5YSGkGOuEecWk5Q4_04nw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

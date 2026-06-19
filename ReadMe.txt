@@ -12,5 +12,5 @@ Highlights:
 
 Growth Edges for me, highlighted in this project:
 
-  - using the object repository. not really familiar but would like to be
-  - testing and mocking data. These modules should all be tested, at minimum. not familiar with mocking data for UiPath, but would like to learn/implement as my next project
+  - using the object repository. at the time (7/2025), wasn't so familiar. Should re-write to use, now. (6/2026)
+  - testing and mocking data. Not familiar with mocking data for UiPath, but would like to learn/implement as my next project. Am familiar with building out a test suite, however. 
